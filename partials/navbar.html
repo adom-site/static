@@ -1,0 +1,92 @@
+
+    <nav class="navbar" id="navbar">
+      <div class="container">
+      
+  <div class="row">
+    <div class="nine columns">
+
+        <ul class="navbar-list" id="navbar-list">
+          
+          <li class="navbar-item">
+              <a class="" href="/">
+                  <img src="public/img/logo.png" style="width:40px; margin-top:20%; margin-right: 20px; border-radius:50%" class=""/>
+              </a>
+          </li>
+          
+          
+          
+          <li class="navbar-item desktop-only"><a class="navbar-link" href="/">Home</a></li>
+          <li class="navbar-item desktop-only"><a class="navbar-link" href="/work.html">Work</a></li>
+          <li class="navbar-item desktop-only"><a class="navbar-link" href="/blog.html">Blog</a></li>
+          <li class="navbar-item desktop-only"><a class="navbar-link" href="/about.html">About</a></li>
+          
+		  <li class="navbar-item desktop-only moreNav">
+            <a class="navbar-link" href="javascript:void(0);">Profiles</a>
+            <div id="profilesNavPopover" class="popover">
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <a class="popover-link" id="steemit-profile" target="_blank" href="javascript:void(0);">Steemit</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" id="busy-profile" target="_blank" href="javascript:void(0);">Busy</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" id="dtube-profile" target="_blank" href="javascript:void(0);">DTube</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" id="peerquery-profile" target="_blank" href="javascript:void(0);">Peer Query</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+		  
+		  <li class="navbar-item mobile-only moreNav">
+            <a class="navbar-link" href="javascript:void(0);">Menu</a>
+            <div id="mobileMenuNavPopover" class="popover open">
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <a class="popover-link" href="/">Home</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="/work.html">Work</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="/blog.html">Blog</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="/about.html">About</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="/contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+		  
+        </ul>
+      
+    </div>
+    
+    <div class="three columns">
+      
+      <a class="button u-full-width" type="button" id="follow-button" target="_blank" style="margin-top:7%">Follow</a>
+      
+      
+    </div>
+  </div>
+
+      </div>
+    </nav>
+
+<script>
+
+		//set extremal profile links
+		$("#steemit-profile").attr('href', "https://steemit.com/@" + configs.steem_account);
+		$("#busy-profile").attr('href', "https://busy.org/@" + configs.steem_account);
+		$("#dtube-profile").attr('href', "https://d.tube/#!/c/" + configs.steem_account);
+		$("#peerquery-profile").attr('href', "https://www.peerquery.com/@" + configs.steem_account);
+	
+		//follow button
+		$("#follow-button").attr('href', configs.steem_app + "@" + configs.steem_account);
+	
+</script>

@@ -1,0 +1,24 @@
+{
+  "name": "adom-static",
+  "version": "1.0.0",
+  "description": "static steem site and blog",
+  "main": "\u001b[D\u001bhtml\u001b[C\u001b[D)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/adom-site/static.git"
+  },
+  "keywords": [
+    "steem",
+    "blog",
+    "ui"
+  ],
+  "author": "dzivenu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adom-site/static/issues"
+  },
+  "homepage": "https://github.com/adom-site/static#readme"
+}
