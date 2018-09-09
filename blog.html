@@ -198,8 +198,14 @@
   
 	function first_img(text) {
 		
-		//return text.match(/\((.*?)\)/)[1];
-		return text.match(/(https?:\/\/.*\.(?:png|jpg|jpeg|gif|png|svg))/i)[0];
+		try{
+			var src = text.match(/(https?:\/\/.*\.(?:png|jpg|jpeg|gif|png|svg))/i)[0];
+			if(src !== null || scr !== undefined) return src;
+			return '/public/img/placeholder.png';
+		} catch(err){
+			//console.log(err);
+			return 'public/img/placeholder.png';
+		}
 		
 	}
   
